@@ -1,0 +1,35 @@
+get config --global user.name "Marija"
+mkdir lab1
+cd
+get init
+cd lab1
+notepad l1.txt
+git add .
+git commit -m "Initial commit"
+notepad l1.txt
+git add l1.txt
+git commit -m "modify l1.txt"
+git remote add origin https://github.com/marijamitreva/marijamitreva.git
+git push -f origin master
+notepad l1.txt
+git checkout -- l1.txt
+git branch logging 
+git checkout logging 
+notepad log.txt
+git add log.txt
+git commit -m "add log.txt"
+git push origin logging
+git checkout master
+git branch allcommands
+git checkout allcommands
+notepad commands.txt
+git add commads.txt
+git commit -m "commands.txt"
+git push origin allcommands
+git rebase master
+git checkout master
+git merge allcommands
+git push origin master
+
+
+
